@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portofolio Rasyah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header" class="hero-section">
+        <div class="hero-content">
+            <h1>Rasyah Oktarifqi</h1>
+            <p>Software Engineer</p>
+            <a href="#about" class="btn">Discover More</a>
+        </div>
+    </header>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>Tentang saya </h2>
+            <p>Saya adalah siswa SMK Budi Luhur yang memiliki kemampuan html,css dan phpmysql.Saya sangat antusias dengan hal baru,dan dalam percodingan ini saya sangat ingin mencoba lebih lagi dan saya orang nya mudah bersosialisasi.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section parallax">
+        <div class="container">
+            <h2 class="mb-5" align="center" >My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('Gambar/callculator.png');"></div>
+                    <div class="project-info">
+                        <h3>Project 1</h3>
+                        <p>jadi di kelas 10 ini saya membuat calculator pakai html,css dan javascriptX.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('Gambar/CV.png');"></div>
+                    <div class="project-info">
+                        <h3>Project 2</h3>
+                        <p>Disini saya membuat cv dari html dan css di kelas 10.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('Gambar/jam.png');"></div>
+                    <div class="project-info">
+                        <h3>Project 3</h3>
+                        <p>Di project ini saya membuat jam dari html dan css di kelas 10.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('Gambar/kreatif.png');"></div>
+                    <div class="project-info">
+                        <h3>Project 4</h3>
+                        <p>Jadi di sini saya membuat land page pakai css dan html .</p>
+                    </div>
+                </div>
+              
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('Gambar/online.png');"></div>
+                    <div class="project-info">
+                        <h3>Project 5</h3>
+                        <p>Jadi di sini saya membuat online shop dari vidio cara fajar .</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('Gambar/website.png');"></div>
+                    <div class="project-info">
+                        <h3>Project 6</h3>
+                        <p>disini saya membuat website dari bosstrap.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('Gambar/register.png');"></div>
+                    <div class="project-info">
+                        <h3>Project 7</h3>
+                        <p>Disini saya membuat register dan login menggunakan Finnap.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('Gambar/gamee.png');"></div>
+                    <div class="project-info">
+                        <h3>Project 8</h3>
+                        <p>Disini saya membuat game sederhana di counstruct2</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('Gambar/sketsa.png');"></div>
+                    <div class="project-info">
+                        <h3>Project 9</h3>
+                        <p>Disini saya membuat rancangan game sederhana di adobe ilustrator </p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('Gambar/ua\ ux.png');"></div>
+                    <div class="project-info">
+                        <h3>Project 10</h3>
+                        <p>di sini saya membuat UA/UX di canva</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button id="backToTop" class="back-to-top">Kembali ke Atas</button>
+    </section>
+
+
+
+
+ 
+
+    <footer id="footer" class="footer">
+        <div class="social-container">
+            <a href="https://www.instagram.com/roktarifqi/?hl=id">
+                <img src="Gambar/instagram.png" alt="instagram" class="instagram-icon">
+            </a>
+        </div>
+        
+    </footer>
+
+    <script>
+        // Mendapatkan elemen 'about' dan tombol 'back-to-top'
+        var aboutSection = document.getElementById("footer");
+        var backToTopButton = document.getElementById("backToTop");
+    
+        // Fungsi untuk mendeteksi ketika pengguna mencapai bagian "About"
+        window.onscroll = function() {
+            var aboutPosition = aboutSection.getBoundingClientRect().top;
+            var screenHeight = window.innerHeight;
+    
+            // Jika bagian "About" terlihat di layar, maka tampilkan tombol
+            if (aboutPosition < screenHeight) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        };
+    
+        // Fungsi untuk menggulir kembali ke atas ketika tombol diklik
+        backToTopButton.onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
+</body>
+</html>
+    
